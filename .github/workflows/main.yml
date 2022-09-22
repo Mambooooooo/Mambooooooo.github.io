@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: Deploy to server
-      - uses: easingthemes/ssh-deploy@main
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.MAMBOOO_SERVER_SSH_KEY }}
           ARGS: "-rltgoDzvO --delete"
