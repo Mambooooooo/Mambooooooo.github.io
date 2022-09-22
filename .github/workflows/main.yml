@@ -32,5 +32,5 @@ jobs:
           REMOTE_PORT: ${{ secrets.MAMBOOO_REMOTE_PORT }}
           REMOTE_USER: ${{ secrets.MAMBOOO_REMOTE_USER }}
           TARGET: ${{ secrets.MAMBOOO_REMOTE_TARGET }}
-          EXCLUDE: "/.github/"
+          EXCLUDE: "/.github/, /.git, README.md"
    
